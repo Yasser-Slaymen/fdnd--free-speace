@@ -1,0 +1,7 @@
+.nav {
+  background-color: var(--green);
+  width: 94.9375em;
+}
+.nav ul {
+  list-style: none;
+}
