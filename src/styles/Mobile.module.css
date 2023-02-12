@@ -1,0 +1,32 @@
+.HamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.HamburgerMenu button {
+  width: 2.5em;
+  height: 3em;
+}
+.nav_mobile {
+  width: 15em;
+  padding: 1.5em;
+  background-color: var(--blue);
+  color: var(--green);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.ul_Mobil a {
+  color: aliceblue;
+}
+.ul_Mobil li {
+  margin: 0.5em;
+}
+.ul_Mobil a:hover {
+  color: var(--green);
+}
+@media (min-width: 70em) {
+  .HamburgerMenu {
+    display: none;
+  }
+}

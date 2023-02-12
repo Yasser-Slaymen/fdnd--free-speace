@@ -1,0 +1,19 @@
+.list-itemsPc{
+    display: none;
+}
+@media (min-width:70em) {
+    .list-itemsPc{
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 47.5em;
+        font-size: larger;
+        font-weight: bold;
+    
+    }
+    /* .nav-img{
+        padding-top: .5em;
+        padding-bottom: -2em;
+    } */
+   }
+   

@@ -25,3 +25,10 @@ body {
 a {
   text-decoration: none;
 }
+ul{
+  list-style: none;
+}
+/* .list-itemsPc{
+  display: none;
+  background-color: #fffc86;
+} */
