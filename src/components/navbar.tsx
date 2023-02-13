@@ -14,26 +14,23 @@ export default function Navbar() {
       <ul className="list-itemsPc">
         <li>
           <Linknav link="/" content="Home" />
-          <Image
-            className="nav-img"
-            src="/images/naf.png"
-            width={25}
-            height={20}
-            alt="img"
-          />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
-          <Image src="/images/icons.png" width={20} height={15} alt="img" />
           <Linknav link="/frontender" content="Frontend worden" />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
           <Linknav link="/frontender" content="Inhoud van de opleiding" />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
           <Linknav link="/frontender" content="Mogelijke beroepen" />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
           <Linknav link="/frontender" content="Toelatingseisen" />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
       </ul>
     </nav>

@@ -5,9 +5,9 @@
   align-items: center;
   /* width:94.9375em; */
   min-height: 100vh;
-  background-color: rgb(149, 214, 214);
+  /* background-color: rgb(18, 21, 21); */
 }
 
 .main h1{
-  color: rgb(220, 220, 230);
+  color: rgb(146, 146, 157);
 }

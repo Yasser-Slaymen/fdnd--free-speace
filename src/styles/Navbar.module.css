@@ -33,3 +33,9 @@
     padding: 0em;
   }
 }
+.nav_pc ul a{
+  color: var(--blue);
+}
+.nav_pc ul a:hover{
+  color: blue;
+}
