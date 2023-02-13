@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width:94.9375em; */
+  width:80em;
   min-height: 100vh;
-  /* background-color: rgb(18, 21, 21); */
+  background-color: rgb(18, 21, 21);
 }
 
 .main h1{
-  color: rgb(146, 146, 157);
+  color: rgb(244, 244, 251);
 }

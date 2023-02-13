@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { request } from "graphql-request";
 import Hmburger from "@/interfaces/Thmbruger";
+
 export default function HomeFirst() {
-  const [Tests, setProducts] = useState<any[]>([]);
+  const [ tests, setProducts] = useState<any[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
-      const { Tests } = await request(
+      const {tests } = await request(
         "https://api-us-west-2.hygraph.com/v2/cle2ubeov4t0401uf31q9ab5c/master",
         `
           {
@@ -18,7 +19,7 @@ export default function HomeFirst() {
         `
       );
 
-      setProducts(Tests);
+      setProducts( tests);
     };
 
     fetchProducts();
@@ -27,11 +28,11 @@ export default function HomeFirst() {
     <>
     <Hmburger>
     <div>
-      {!Tests ? (
+      {! tests ? (
         "Oopss somthing going wrong"
       ) : (
         <>
-          {Tests.map((footer:any) => (
+          { tests.map((footer:any) => (
             <div key={footer.id}>
               <h4 className="footer_headr">{footer.title}</h4>
 
