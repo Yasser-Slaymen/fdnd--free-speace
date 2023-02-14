@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width:80em;
+  /* width:80em; */
   min-height: 100vh;
   background-color: rgb(18, 21, 21);
 }

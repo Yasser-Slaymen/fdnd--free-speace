@@ -1,0 +1,51 @@
+/* :root {
+  --white: #ffffff;
+  --blue: #050542;
+  --green: #66e5bf;
+  --purple: #a675f5;
+  --lavender-dark: hsl(263, 86%, 60%);
+  --attention-background: #05054233;
+  --call-to-action: #fffc86;
+  --rounded: 0.5rem;
+  --pilled: 2rem;
+  --shadow: 0.3rem;
+  --radius: 1em;
+} */
+.havFrontend {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: .5em;
+  width: 45em;
+  /* background-color: aliceblue; */
+}
+.havlogo {
+  width: 100px;
+  height: 35px;
+}
+.havFrontend .fdnd {
+  border-left: 1px solid var(--white);
+  padding-left: 1em;
+  margin-left: 1em;
+  font-size: 1em;
+  color: var(--white);
+}
+@media (min-width: 70em) {
+  .havFrontend {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: .5em;
+    width: 80em;
+  }
+  .havlogo {
+    width:150px;
+    height: 40px;
+  }
+  .havFrontend .fdnd {
+    border-left: 1px solid var(--white);
+    padding-left: 1em;
+    margin-left: 1em;
+    font-family: "Open-sans", sans-serif;
+    color: var(--white);
+  }
+  
+}
