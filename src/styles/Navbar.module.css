@@ -28,6 +28,7 @@
     align-items: flex-start;
     padding: 1em;
     min-width: 80em;
+    /* margin-top: 2em; */
   }
   .nav_pc > section {
     padding: 0em;

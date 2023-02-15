@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav_pc}>
       <section className="log_hmburg">
-        <section className={styles.logo}>FDND</section>
+        <section className={styles.logo}>fdnd</section>
         <HamburgerMenu />
       </section>
 

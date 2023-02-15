@@ -35,6 +35,7 @@ export default function HomeFirst() {
           { tests.map((footer:any) => (
             <div key={footer.id}>
               <h4 className="footer_headr">{footer.title}</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, natus!</p>
 
             </div>
           ))}

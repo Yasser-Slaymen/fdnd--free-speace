@@ -21,6 +21,7 @@ body {
   position: relative;
   display: grid;
   place-items: center;
+  margin-top: 4em;
   font-family: "Open Sans", sans-serif;
   background-color: var( --blue);
 }
@@ -30,7 +31,6 @@ a {
 ul{
   list-style: none;
 }
-/* .list-itemsPc{
-  display: none;
-  background-color: #fffc86;
-} */
+footer{
+  background-color: var(--lavender-dark);
+}

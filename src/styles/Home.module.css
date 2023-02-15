@@ -1,13 +1,16 @@
 
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width:80em; */
+  display: none;
+  /* width: 45em; */
   min-height: 100vh;
   background-color: rgb(18, 21, 21);
 }
-
 .main h1{
   color: rgb(244, 244, 251);
 }
+.main h4{
+  color: rgb(244, 244, 251);
+}
+/* @media (min-width: 70em){
+ 
+} */
