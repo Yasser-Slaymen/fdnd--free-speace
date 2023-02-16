@@ -20,6 +20,9 @@
   0 11px 0 #060606, 0 12px 0 #f3eded,
   0 20px 30px rgba(0, 0, 0, 0.5); */
 }
+.nav_pc ul a{
+  color:#ffff;
+}
 @media (min-width: 70em) {
   .nav_pc {
     display: flex;
@@ -32,10 +35,10 @@
   .nav_pc > section {
     padding: 0em;
   }
-}
-.nav_pc ul a{
-  color: var(--blue);
-}
-.nav_pc ul a:hover{
-  color: blue;
+  .nav_pc ul a{
+    color: var(--blue);
+  }
+  .nav_pc ul a:hover{
+    color: blue;
+  }
 }

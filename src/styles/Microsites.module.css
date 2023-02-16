@@ -1,39 +1,137 @@
-
 .Footer {
-  width: 75em;
+  width: 45em;
   color: #050542;
   margin-top: 2em;
+  border-radius: var(--rounded);
 }
 .FooterMicrosites {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  gap: 1em;
   padding: 2em;
 }
 /* Footer-header */
-.Microsites_header{
+.Microsites_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.Microsites_header h2 {
+  /* margin: calc(0rem - 1px) calc(0rem - 1px) 0rem 0; */
+  padding: 0 1rem 0.5rem 1rem;
+  position: relative;
+  width: fit-content;
+  font-size: calc(1.2rem + 1.4vw);
+  line-height: calc(1.4rem + 1.3vw);
+  color: #ffff;
+  background: var(--blue);
+  border-left: 1px solid var(----lavender-dark);
+  border-bottom: 1px solid var(----lavender-dark);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  z-index: 2;
+}
+.Microsites_header h2::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  right: calc(0 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blue);
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-right-radius: var(--rounded);
+  border-top-left-radius: 0;
+  border-right: 1px solid var(--blue);
+}
+.Microsites_header h2::after {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: calc(-1.1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blue);
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-right-radius: var(--rounded);
+  border-top-left-radius: 0;
+  border-right: 1px solid var(--blue);
+}
+/* finshh footer header */
+.micro_2 section {
+  display: flex;
+  justify-content: space-between;
+  width: 15em;
+}
+/* .micro_2 h3{
+  color:#1212E6 ;
+} */
+
+.Footer a {
+  color: #050542;
+}
+.pargraph {
+  /* width: 20em; */
+  padding-bottom: 0.5em;
+}
+.email {
+  padding: 0.3em;
+  background-color: #66e5bf;
+  border-radius: 0.2rem;
+}
+.email_icon {
+  margin-right: 0.2em;
+}
+.micro_3 {
+  display: flex;
+  align-items: center;
+}
+.phone {
+  padding: 0.3em;
+  background-color: #66e5bf;
+  border-radius: 0.2rem;
+}
+.phone_icon {
+  margin-right: 0.2em;
+}
+@media (min-width: 70em) {
+  .Footer {
+    width: 75em;
+    color: #050542;
+    margin-top: 2em;
+  }
+  .FooterMicrosites {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    padding: 2em;
+  }
+  /* Footer-header */
+  .Microsites_header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-.Microsites_header h2{
+  }
+  .Microsites_header h2 {
     /* margin: calc(0rem - 1px) calc(0rem - 1px) 0rem 0; */
     padding: 0 1rem 0.5rem 1rem;
     position: relative;
     width: fit-content;
     font-size: calc(1.2rem + 1.4vw);
     line-height: calc(1.4rem + 1.3vw);
-    color:#ffff;
+    color: #ffff;
     background: var(--blue);
     border-left: 1px solid var(----lavender-dark);
     border-bottom: 1px solid var(----lavender-dark);
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius:0;
+    border-bottom-right-radius: 0;
     z-index: 2;
-}
-.Microsites_header h2::before {
+  }
+  .Microsites_header h2::before {
     content: "";
     position: absolute;
-    top: 3rem;
+    top: 3.2rem;
     right: calc(0 * var(--rounded));
     box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blue);
     background-color: transparent;
@@ -57,36 +155,39 @@
     border-right: 1px solid var(--blue);
   }
 
-/* finshh footer header */
+  /* finshh footer header */
 
-.micro_2 section {
-  display: flex;
-  justify-content: space-between;
-  width: 15em;
-}
+  .micro_2 section {
+    display: flex;
+    justify-content: space-between;
+    width: 15em;
+  }
 
-.Footer a {
-  color: #050542;
-}
-.pargraph {
-  width: 20em;
-  padding-bottom: 0.5em;
-}
-.email {
-  padding: 0.3em;
-  background-color: #66e5bf;
-  border-radius: 0.2rem;
-}
-.email_icon{
-    margin-right: .2em;
-}
-.phone{
-    padding: .3em;
+  .Footer a {
+    color: #050542;
+  }
+  .pargraph {
+    width: 20em;
+    padding-bottom: 0.5em;
+  }
+  .email {
+    padding: 0.3em;
     background-color: #66e5bf;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
+  }
+  .email_icon {
+    margin-right: 0.2em;
+  }
+  .micro_3 {
+    display: flex;
+    align-items: center;
+  }
+  .phone {
+    padding: 0.3em;
+    background-color: #66e5bf;
+    border-radius: 0.2rem;
+  }
+  .phone_icon {
+    margin-right: 0.2em;
+  }
 }
-.phone_icon{
-    margin-right: .2em;
-
-}
-

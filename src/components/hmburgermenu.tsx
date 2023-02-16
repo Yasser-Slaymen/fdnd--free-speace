@@ -56,7 +56,7 @@ const HamburgerMenu = () => {
           <nav className={ styles.nav_mobile}>
             <ul className={styles.ul_Mobil}>
               <li>
-                <Link href="/">Home</Link>
+                <Link className={styles.a_MobilLink}  href="/">Home</Link>
               </li>
               <li>
                 <Link href="/frontender">Frontender worden</Link>

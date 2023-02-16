@@ -1,49 +1,58 @@
 import { useEffect, useState } from "react";
 import { request } from "graphql-request";
-import Hmburger from "@/interfaces/Thmbruger";
+import HomeInterfaces from "@/interfaces/HomInterface";
+import styles from "@/styles/Home.module.css";
 
 export default function HomeFirst() {
-  const [ tests, setProducts] = useState<any[]>([]);
+  const [homeFirstes, setProducts] = useState<any[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
-      const {tests } = await request(
+      const { homeFirstes } = await request(
         "https://api-us-west-2.hygraph.com/v2/cle2ubeov4t0401uf31q9ab5c/master",
         `
           {
-            tests{
-                  id
-                  title 
+            homeFirstes{
+              id
+              title
+              titleScondary
+              multiText
+              richText {
+                html
+              }
+              img {
+                url
+              }    
                     
             }
           }
         `
       );
 
-      setProducts( tests);
+      setProducts(homeFirstes);
     };
 
     fetchProducts();
   }, []);
   return (
     <>
-    <Hmburger>
-    <div>
-      {! tests ? (
-        "Oopss somthing going wrong"
-      ) : (
-        <>
-          { tests.map((footer:any) => (
-            <div key={footer.id}>
-              <h4 className="footer_headr">{footer.title}</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, natus!</p>
-
-            </div>
-          ))}
-        </>
-      )}
-    </div>
-    </Hmburger>
+      <HomeInterfaces>
+        <div className={styles.Home_First}>
+          {!homeFirstes ? (
+            "Oopss somthing going wrong"
+          ) : (
+            <>
+              {homeFirstes.map((homefirst: any) => (
+                <>
+                  <div key={homefirst.id}>
+                    <h4>{homefirst.title}</h4>
+                    <h4>{homefirst.titleScondary}</h4>
+                  </div>
+                </>
+              ))}
+            </>
+          )}
+        </div>
+      </HomeInterfaces>
     </>
-    
   );
 }

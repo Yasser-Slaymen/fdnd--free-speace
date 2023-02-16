@@ -16,7 +16,7 @@
   border-radius: var(--radius);
   cursor: pointer;
 }
-.ul_Mobil a {
+.a_MobilLink a {
   color: aliceblue;
 }
 .ul_Mobil li {

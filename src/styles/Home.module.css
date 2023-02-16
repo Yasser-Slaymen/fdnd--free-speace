@@ -1,16 +1,16 @@
-
 .main {
-  display: none;
   width: 45em;
-  min-height: 100vh;
-  background-color: rgb(18, 21, 21);
+ border-left: 1px solid var(--green);
+ border-right: 1px solid var(--green);
+  background-color:transparent;
 }
-.main h1{
-  color: rgb(244, 244, 251);
+.Home_First h4{
+  color: aliceblue;
 }
-.main h4{
-  color: rgb(244, 244, 251);
-}
-/* @media (min-width: 70em){
+
+@media (min-width: 70em){
+  .main {
+    width: 75em;
+  }
  
-} */
+}
