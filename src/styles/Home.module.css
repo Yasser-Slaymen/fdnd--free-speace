@@ -1,7 +1,7 @@
 
 .main {
   display: none;
-  /* width: 45em; */
+  width: 45em;
   min-height: 100vh;
   background-color: rgb(18, 21, 21);
 }

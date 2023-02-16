@@ -1,8 +1,9 @@
 import Microsite from "@/interfaces/Microsite";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "@/styles/Microsites.module.css";
 import { useEffect, useState } from "react";
 import { request } from "graphql-request";
-// import marked from 'marked'
 
 export default function Microsites() {
   const [footers, setProducts] = useState<any[]>([]);
@@ -17,7 +18,12 @@ export default function Microsites() {
                     id
                     queklinks
                     multiText
-                    markdown
+                    micrositeRichtext {
+                      html
+                    }
+                    micrositeRichtext2 {
+                      html
+                    }
                 }
             }
           `
@@ -38,16 +44,31 @@ export default function Microsites() {
             <>
               {footers.map((footer: any) => (
                 <>
-                  <h2>Microsites</h2>
-                  <div className="FooterMicrosites" key={footer.id}>
-                    <section>
-                      <p>{footer.multiText}</p>
+                <div  className={styles.Microsites_header}>
+                <h2>Microsites</h2>
+                </div>
+                 
+                  <div className={styles.FooterMicrosites} key={footer.id}>
+                    <section className={styles.micro_1}>
+                      <p className={styles.pargraph}>{footer.multiText}</p>
+                      <Link className={styles.email} href="mailto:info-fdnd@hva.nl?subject='Hello from Abstract!'&body='Just popped in to say hello'">
+                      <Image className={styles.email_icon} src="/images/email.png" width={20} height={13} alt="img" />
+                       E-mail: info-fdnd@hva.nl
+                        </Link>
                     </section>
-                    <section>
+                    <section className={styles.micro_2}>
                         <h3>{footer.queklinks}</h3>
-                        <section  dangerouslySetInnerHTML={{__html:footer.markdown.html}}></section>
+                        <section>
+                        <div  dangerouslySetInnerHTML={{__html:footer.micrositeRichtext.html}}></div>
+                        <div  dangerouslySetInnerHTML={{__html:footer.micrositeRichtext2.html}}></div>
+                        </section>
                     </section>
-                    <section></section>
+                    <section className={styles.micro_3}>
+                    <Link className={styles.phone} href="tel:020 595 1855">
+                      <Image className={styles.phone_icon} src="/images/phone.png" width={20} height={15} alt="img" />
+                      Bel:020 595 1855
+                       </Link>
+                    </section>
                   </div>
                 </>
               ))}
