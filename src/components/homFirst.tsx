@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { request } from "graphql-request";
-import { HomeInterface } from "@/interfaces/HomInterface";
-import styles from "@/styles/Home.module.css";
+import HomeInterface from "@/interfaces/HomInterface";
+import styles from "@/styles/HomeFirste.module.css";
+// import Image from "next/image";
 
-export default function HomeFirst({title,description}:HomeInterface) {
+export default function HomeFirst() {
   const [homeFirstes, setProducts] = useState<any[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
@@ -35,24 +36,35 @@ export default function HomeFirst({title,description}:HomeInterface) {
   }, []);
   return (
     <>
-      <>
-        <div className={styles.Home_First}>
+      <HomeInterface>
+        <div>
           {!homeFirstes ? (
             "Oopss somthing going wrong"
           ) : (
             <>
               {homeFirstes.map((homefirst: any) => (
                 <>
-                  <div key={homefirst.id}>
-                    <h4>{homefirst.title}</h4>
-                    <h4>{homefirst.titleScondary}</h4>
+                  <div  className={styles.Home_First}  key={homefirst.id}>
+                    <section className={styles.Homefirst_section1}>
+                      <h1>{homefirst.title}</h1>
+                      <img className={styles.homefirst_imag} src={homefirst.img.url} alt="home img" />
+                      {/* <Image src={homefirst.img.url} width={200} height={150} alt="img" /> */}
+                    </section>
+                    <section>
+                      <article>
+                        <h2>{homefirst.titleScondary}</h2>
+                        <p>{homefirst.multiText}</p>
+                      </article>
+                      <p  dangerouslySetInnerHTML={{__html: homefirst.richText.html}}></p>
+                    </section>
+
                   </div>
                 </>
               ))}
             </>
           )}
         </div>
-      </>
+      </HomeInterface>
     </>
   );
 }

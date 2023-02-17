@@ -12,13 +12,6 @@
   font-size: 2em;
   font-weight: bolder;
   color: var(--blue);
-  /* text-shadow: 0 1px 0 #010f05, 0 2px 0 #0c0c0c,
-  0 3px 0 #0c0909, 0 4px 0 #e6e2e2,
-  0 5px 0 #0f0f0f, 0 6px 0 #ede2e2,
-  0 7px 0 #131212, 0 8px 0 #c6b0b0,
-  0 9px 0 #0c0c0c, 0 10px 0 rgb(237, 228, 228),
-  0 11px 0 #060606, 0 12px 0 #f3eded,
-  0 20px 30px rgba(0, 0, 0, 0.5); */
 }
 .nav_pc ul a{
   color:#ffff;

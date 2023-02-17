@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Index.module.css";
 import HomeFirst from "@/components/homFirst";
 
 export default function Home() {

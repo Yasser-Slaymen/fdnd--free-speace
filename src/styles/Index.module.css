@@ -4,9 +4,6 @@
  border-right: 1px solid var(--green);
   background-color:transparent;
 }
-.Home_First h4{
-  color: aliceblue;
-}
 
 @media (min-width: 70em){
   .main {
