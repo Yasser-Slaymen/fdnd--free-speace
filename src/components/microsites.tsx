@@ -42,12 +42,12 @@ export default function Microsites() {
           ) : (
             <>
               {footers.map((footer: any) => (
-                <>
-                  <div className={styles.Microsites_header}>
+                <div key={footer.id}>
+                  <div className={styles.Microsites_header} >
                     <h2>Microsites</h2>
                   </div>
 
-                  <div className={styles.FooterMicrosites} key={footer.id}>
+                  <div className={styles.FooterMicrosites}>
                     <section className={styles.micro_1}>
                       <p className={styles.pargraph}>{footer.multiText}</p>
                       <Link
@@ -92,7 +92,7 @@ export default function Microsites() {
                       </Link>
                     </section>
                   </div>
-                </>
+                </div>
               ))}
             </>
           )}

@@ -14,6 +14,7 @@ export default function Navbar() {
       <ul className="list-itemsPc">
         <li>
           <Linknav link="/" content="Home" />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
           <Linknav link="/frontender" content="Frontend worden" />

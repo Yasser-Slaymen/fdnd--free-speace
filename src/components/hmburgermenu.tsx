@@ -19,11 +19,11 @@ const HamburgerMenu = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="#000000"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -38,11 +38,11 @@ const HamburgerMenu = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="#000000"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <line x1="4" y1="6" x2="20" y2="6" />

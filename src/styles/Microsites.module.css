@@ -2,6 +2,7 @@
   width: 45em;
   color: #050542;
   margin-top: 2em;
+  margin-bottom: 2em;
   border-radius: var(--rounded);
 }
 .FooterMicrosites {
@@ -104,7 +105,8 @@
   .FooterMicrosites {
     display: flex;
     flex-direction:row ;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content:space-between;
     padding: 2em;
   }
   /* Footer-header */

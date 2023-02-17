@@ -1,7 +1,7 @@
 .main {
   width: 45em;
- border-left: 1px solid var(--green);
- border-right: 1px solid var(--green);
+ /* border-left: 1px solid var(--green);
+ border-right: 1px solid var(--green); */
   background-color:transparent;
 }
 

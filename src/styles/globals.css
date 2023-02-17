@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 :root {
   --white: #ffffff;
@@ -25,7 +26,7 @@ body {
   margin-top: 4em;
   font-family: "Open Sans", sans-serif;
   background-color: var( --blue);
-  /* width: em; */
+  width: 47em;
   overflow-x:hidden;
 }
 a {
