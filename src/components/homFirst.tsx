@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { request } from "graphql-request";
-import HomeInterfaces from "@/interfaces/HomInterface";
+import { HomeInterface } from "@/interfaces/HomInterface";
 import styles from "@/styles/Home.module.css";
 
-export default function HomeFirst() {
+export default function HomeFirst({title,description}:HomeInterface) {
   const [homeFirstes, setProducts] = useState<any[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
@@ -35,7 +35,7 @@ export default function HomeFirst() {
   }, []);
   return (
     <>
-      <HomeInterfaces>
+      <>
         <div className={styles.Home_First}>
           {!homeFirstes ? (
             "Oopss somthing going wrong"
@@ -52,7 +52,7 @@ export default function HomeFirst() {
             </>
           )}
         </div>
-      </HomeInterfaces>
+      </>
     </>
   );
 }

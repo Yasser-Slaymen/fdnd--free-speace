@@ -3,16 +3,15 @@ import HavFrontend from "./hav";
 import Microsites from "./microsites";
 import { ReactNode } from "react";
 interface LayoutProps {
-    children: ReactNode;
+  children: ReactNode;
 }
-export default function Layout ({ children }:LayoutProps){
+export default function Layout({ children }: LayoutProps) {
   return (
     <div className="content">
-      <HavFrontend/>
+      <HavFrontend />
       <Navbar />
       {children}
-      <Microsites/>
+      <Microsites />
     </div>
   );
-};
-
+}
