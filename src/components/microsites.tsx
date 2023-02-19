@@ -56,12 +56,11 @@ export default function Microsites() {
                       >
                         <Image
                           className={styles.email_icon}
-                          src="/images/email.png"
+                          src="/images/mail4.png"
                           width={20}
-                          height={13}
+                          height={15}
                           alt="img"
-                        />
-                        E-mail: info-fdnd@hva.nl
+                        /> <span className={styles.email_text}> E-mail: info-fdnd@hva.nl</span>
                       </Link>
                     </section>
                     <section className={styles.micro_2}>
@@ -83,12 +82,12 @@ export default function Microsites() {
                       <Link className={styles.phone} href="tel:020 595 1855">
                         <Image
                           className={styles.phone_icon}
-                          src="/images/phone.png"
+                          src="/images/phone1.png"
                           width={20}
                           height={15}
                           alt="img"
                         />
-                        Bel:020 595 1855
+                        <span className={styles.phone_number}>Bel:020 595 1855</span>
                       </Link>
                     </section>
                   </div>

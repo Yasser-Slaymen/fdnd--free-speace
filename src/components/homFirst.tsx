@@ -59,7 +59,8 @@ export default function HomeFirst() {
                         <h2>{homefirst.titleScondary}</h2>
                         <p>{homefirst.multiText}</p>
                       </article>
-                      <p className={styles.homefirst_text}
+                      <p
+                        className={styles.homefirst_text}
                         dangerouslySetInnerHTML={{
                           __html: homefirst.richText.html,
                         }}
