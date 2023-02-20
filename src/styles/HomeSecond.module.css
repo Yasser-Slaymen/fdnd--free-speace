@@ -57,23 +57,40 @@
   .Home_Second {
     background-color: var(--green);
     width: 75em;
+    height: 43.3em;
   }
   .Home_Second_content{
     display: flex;
     justify-content: space-between;
   }
+  .home_Second_Section1{
+    position: relative;
+  }
   .homeSecond_img1{
     width: 35em;
   }
-  .home_Second_Section1 p{
-    width: 30em;
+  .Home_Second_text1{
+    position: absolute;
+    top: 19em;
+    left: 5em;
     background-color: var(--blue);
     color: var(--green);
+    padding: 1em;
+    width: 30em;
+    height: 17em;
   }
-  .home_Second_Section2 p{
-    width: 30em;
+  .home_Second_Section2{
+    position: relative;
+  }
+  .Home_Second_text2{
+    position: absolute;
+    top: 5em;
+    left: 4em;
     background-color: var(--blue);
     color: var(--green);
+    padding: 1em;
+    width: 30em;
+    height: 17em;
 
   }
 }

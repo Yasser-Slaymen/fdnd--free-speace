@@ -59,6 +59,7 @@ export default function HomeSecond() {
                         alt="img"
                       />
                       <p
+                        className={styles.Home_Second_text1}
                         dangerouslySetInnerHTML={{
                           __html: homesecond.fristText.html,
                         }}
@@ -72,6 +73,7 @@ export default function HomeSecond() {
                         alt="img"
                       />
                       <p
+                        className={styles.Home_Second_text1}
                         dangerouslySetInnerHTML={{
                           __html: homesecond.scondText.html,
                         }}
