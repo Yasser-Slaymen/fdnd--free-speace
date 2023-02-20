@@ -1,5 +1,6 @@
 import Navbar from "./navbar";
 import HavFrontend from "./hav";
+import Quote from "./quote"
 import Microsites from "./microsites";
 import { ReactNode } from "react";
 interface LayoutProps {
@@ -12,6 +13,7 @@ export default function Layout({ children }: LayoutProps) {
       <Navbar />
       {children}
       <Microsites />
+      <Quote/>
     </div>
   );
 }

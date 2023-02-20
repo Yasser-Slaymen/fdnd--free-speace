@@ -1,20 +1,7 @@
-/* :root {
-  --white: #ffffff;
-  --blue: #050542;
-  --green: #66e5bf;
-  --purple: #a675f5;
-  --lavender-dark: hsl(263, 86%, 60%);
-  --attention-background: #05054233;
-  --call-to-action: #fffc86;
-  --rounded: 0.5rem;
-  --pilled: 2rem;
-  --shadow: 0.3rem;
-  --radius: 1em;
-} */
 .havFrontend {
   display: flex;
   justify-content: flex-start;
-  margin-top: .5em;
+  margin-top: 0.5em;
   width: 45em;
   /* background-color: aliceblue; */
 }
@@ -29,19 +16,29 @@
   font-size: 1em;
   color: var(--white);
 }
+/* Qoute */
+.Quote_container{
+  width: 45em;
+  margin-top: 2em;
+}
+.Quote_text{
+  font-size:1.3em ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--white);
+}
 @media (min-width: 70em) {
   .havFrontend {
     position: absolute;
     top: -3.5em;
-    left: .9em;
+    left: 0.9em;
     display: flex;
     justify-content: flex-start;
-    margin-top: .5em;
+    margin-top: 0.5em;
     width: 75em;
     /* background-color: aliceblue; */
   }
   .havlogo {
-    width:150px;
+    width: 150px;
     height: 40px;
   }
   .havFrontend .fdnd {
@@ -51,5 +48,9 @@
     font-family: "Open-sans", sans-serif;
     color: var(--white);
   }
-  
+  /* Qoute */
+  .Quote_container{
+    position: absolute;
+    left: 0.9em;
+  }
 }

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { request } from "graphql-request";
 import HomeInterface from "@/interfaces/HomInterface";
 import styles from "@/styles/HomeFirste.module.css";
-// import Image from "next/image";
 
 export default function HomeFirst() {
   const [homeFirstes, setProducts] = useState<any[]>([]);
@@ -35,7 +34,7 @@ export default function HomeFirst() {
     fetchProducts();
   }, []);
   return (
-    <>
+    <div>
       <HomeInterface>
         <>
           {!homeFirstes ? (
@@ -52,7 +51,6 @@ export default function HomeFirst() {
                         src={homefirst.img.url}
                         alt="home img"
                       />
-                      {/* <Image src={homefirst.img.url} width={200} height={150} alt="img" /> */}
                     </section>
                     <section className={styles.homefirst_content}>
                       <article>
@@ -73,6 +71,6 @@ export default function HomeFirst() {
           )}
         </>
       </HomeInterface>
-    </>
+    </div>
   );
 }

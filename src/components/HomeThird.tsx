@@ -23,7 +23,20 @@ export default function HomeThird() {
                     richText1 {
                       html
                     }
-                    
+                    img2 {
+                      url
+                    }
+                    primarytitle2
+                    multiText2 {
+                      html
+                    }
+                    img3 {
+                      url
+                    }
+                    primarytitle3
+                    richText3 {
+                      html
+                    }
                   }
               }
             `
@@ -45,6 +58,7 @@ export default function HomeThird() {
               {homeThirds.map((homethird: any) => (
                 <div className={styles.Home_Third} key={homethird.id}>
                   <h2 className={styles.Home_Third_title}>{homethird.title}</h2>
+                  {/* section-1 */}
                   <section className={styles.Home_Third_container}>
                     <section className={styles.Home_Third_containt1}>
                       <img
@@ -63,7 +77,7 @@ export default function HomeThird() {
                           }}
                         ></p>
                       </div>
-                      <div   className={styles.Home_Third_LinkContainar}>
+                      <div className={styles.Home_Third_LinkContainar}>
                         <Link
                           className={styles.Home_Third_link1}
                           href="/frontender"
@@ -79,44 +93,76 @@ export default function HomeThird() {
                         </Link>
                       </div>
                     </section>
-                    {/* <section className={styles.Home_Third_containt1}>
+
+                    {/* section-2 */}
+                    <section className={styles.Home_Third_containt1}>
                       <img
                         className={styles.Home_Third_img1}
-                        src={homethird.img1.url}
+                        src={homethird.img2.url}
                         alt="img"
                       />
                       <div className={styles.home_Third_conten1}>
-                        <h3 className={styles.homeSecond_img1}>
-                          {homethird.primarytitle1}
+                        <h3 className={styles.home_Third_primarytitle1}>
+                          {homethird.primarytitle2}
                         </h3>
                         <p
                           className={styles.Home_Third_text1}
                           dangerouslySetInnerHTML={{
-                            __html: homethird.richText1.html,
+                            __html: homethird.multiText2.html,
                           }}
                         ></p>
                       </div>
-                      <Link href="/">Read more</Link>
-                    </section> */}
-                    {/* <section className={styles.Home_Third_containt1}>
+                      <div className={styles.Home_Third_LinkContainar}>
+                        <Link
+                          className={styles.Home_Third_link1}
+                          href="/frontender"
+                        >
+                          <span>Read more</span>
+                          <Image
+                            className={styles.readMore1_icon}
+                            src="/images/read-more.png"
+                            width={20}
+                            height={15}
+                            alt="img"
+                          />
+                        </Link>
+                      </div>
+                    </section>
+
+                    {/* section-3 */}
+                    <section className={styles.Home_Third_containt1}>
                       <img
                         className={styles.Home_Third_img1}
-                        src={homethird.img1.url}
+                        src={homethird.img3.url}
                         alt="img"
                       />
                       <div className={styles.home_Third_conten1}>
-                        <h3 className={styles.homeSecond_img1}>
-                          {homethird.primarytitle1}
+                        <h3 className={styles.home_Third_primarytitle1}>
+                          {homethird.primarytitle3}
                         </h3>
                         <p
                           className={styles.Home_Third_text1}
                           dangerouslySetInnerHTML={{
-                            __html: homethird.richText1.html,
+                            __html: homethird.richText3.html,
                           }}
                         ></p>
                       </div>
-                      <Link href="/">Read more</Link>
-                    </section> */}
+                      <div className={styles.Home_Third_LinkContainar}>
+                        <Link
+                          className={styles.Home_Third_link1}
+                          href="/frontender"
+                        >
+                          <span>Read more</span>
+                          <Image
+                            className={styles.readMore1_icon}
+                            src="/images/read-more.png"
+                            width={20}
+                            height={15}
+                            alt="img"
+                          />
+                        </Link>
+                      </div>
+                    </section>
                   </section>
                 </div>
               ))}
