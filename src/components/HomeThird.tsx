@@ -53,7 +53,7 @@ export default function HomeThird() {
                         alt="img"
                       />
                       <div className={styles.home_Third_conten1}>
-                        <h3 className={styles.homeSecond_img1}>
+                        <h3 className={styles.home_Third_primarytitle1}>
                           {homethird.primarytitle1}
                         </h3>
                         <p
@@ -63,19 +63,21 @@ export default function HomeThird() {
                           }}
                         ></p>
                       </div>
-                      <Link
-                        className={styles.Home_Third_link1}
-                        href="/frontender"
-                      >
-                        <span>Read more</span>
-                        <Image
-                          className={styles.readMore1_icon}
-                          src="/images/read-more.png"
-                          width={20}
-                          height={15}
-                          alt="img"
-                        />
-                      </Link>
+                      <div   className={styles.Home_Third_LinkContainar}>
+                        <Link
+                          className={styles.Home_Third_link1}
+                          href="/frontender"
+                        >
+                          <span>Read more</span>
+                          <Image
+                            className={styles.readMore1_icon}
+                            src="/images/read-more.png"
+                            width={20}
+                            height={15}
+                            alt="img"
+                          />
+                        </Link>
+                      </div>
                     </section>
                     {/* <section className={styles.Home_Third_containt1}>
                       <img
