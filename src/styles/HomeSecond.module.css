@@ -40,7 +40,6 @@
   height: calc(2 * var(--rounded));
   border-top-left-radius: var(--rounded);
 }
-
 /* finsh-title */
 .Home_Second_content {
   padding: 2em;
@@ -57,7 +56,7 @@
   .Home_Second {
     background-color: var(--green);
     width: 75em;
-    height: 43.3em;
+    height:48em;
   }
   .Home_Second_content{
     display: flex;
@@ -76,7 +75,7 @@
     background-color: var(--blue);
     color: var(--green);
     padding: 1em;
-    width: 30em;
+    width: 26.1em;
     height: 17em;
   }
   .home_Second_Section2{
@@ -89,7 +88,7 @@
     background-color: var(--blue);
     color: var(--green);
     padding: 1em;
-    width: 30em;
+    width: 26.1em;
     height: 17em;
 
   }

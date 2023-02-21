@@ -43,26 +43,28 @@ export default function HomeFirst() {
             <>
               {homeFirstes.map((homefirst: any) => (
                 <>
-                  <div className={styles.Home_First} key={homefirst.id}>
-                    <section className={styles.Homefirst_section1}>
+                  <div key={homefirst.id}>
+                    {/* <section className={styles.Homefirst_section1}>
                       <h1>{homefirst.title}</h1>
-                      <img
-                        className={styles.homefirst_imag}
-                        src={homefirst.img.url}
-                        alt="home img"
-                      />
-                    </section>
-                    <section className={styles.homefirst_content}>
-                      <article>
-                        <h2>{homefirst.titleScondary}</h2>
-                        <p>{homefirst.multiText}</p>
+                      <p>{homefirst.multiText}</p>
+                    </section> */}
+                    <section className={styles.Home_First}>
+                      <h2 className={styles.HomeFirst_primaryTitle}>
+                        {homefirst.titleScondary}
+                      </h2>
+                      <article className={styles.homefirst_content}>
+                        <p
+                          className={styles.homefirst_text}
+                          dangerouslySetInnerHTML={{
+                            __html: homefirst.richText.html,
+                          }}
+                        ></p>
+                        <img
+                          className={styles.homefirst_imag}
+                          src={homefirst.img.url}
+                          alt="home img"
+                        />
                       </article>
-                      <p
-                        className={styles.homefirst_text}
-                        dangerouslySetInnerHTML={{
-                          __html: homefirst.richText.html,
-                        }}
-                      ></p>
                     </section>
                   </div>
                 </>

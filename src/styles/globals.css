@@ -29,6 +29,9 @@ body {
   width: 47em;
   overflow-x:hidden;
 }
+p{
+  font-size: 18px;
+}
 a {
   text-decoration: none;
 }
@@ -49,5 +52,5 @@ footer{
     width: 96em;
     overflow-x:hidden;
   }
-  
+ 
 }

@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <HomeFirst/>
-        <HomeSecond/>
-        <HomeThird/>
+        <HomeSecond />
+        <HomeFirst />
+        <HomeThird />
       </main>
     </>
   );

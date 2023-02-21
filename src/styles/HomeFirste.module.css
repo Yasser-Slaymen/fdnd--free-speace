@@ -1,14 +1,50 @@
 .Home_First {
   width: 45em;
-  background-color: var(--lavender-dark);
+  margin-top: 2em;
+  background-color: var(--green);
   color: var(--blue);
-  border-bottom-left-radius: var(--rounded);
-  border-bottom-right-radius: var(--rounded);
+  border-radius: var(--rounded);
 }
-.Homefirst_section1 {
+/* title */
+.HomeFirst_primaryTitle {
+  padding: 0 1rem 0.7rem 1rem;
   position: relative;
+  width: fit-content;
+  font-size: calc(1rem + 1.4vw);
+  line-height: calc(1.4rem + 1.3vw);
+  color: white;
+  background: var(--blue);
+  border-bottom-right-radius: 5px;
+  z-index: 2;
 }
-.Home_First h1 {
+.HomeFirst_primaryTitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 23;
+  right: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blue);
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
+}
+.HomeFirst_primaryTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: calc(0 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blue);
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
+}
+/* finsh-title */
+/* .Homefirst_section1 {
+  position: relative;
+} */
+/* .Home_First h1 {
   position: absolute;
   top: 3%;
   left: 16%;
@@ -20,47 +56,45 @@
     0 4px 0 #e6e2e2, 0 5px 0 var(--blue), 0 6px 0 #ede2e2, 0 7px 0 var(--blue),
     0 8px 0 #c6b0b0, 0 9px 0 var(--blue), 0 10px 0 rgb(237, 228, 228),
     0 11px 0 var(--blue), 0 12px 0 #f3eded, 0 20px 30px var(--blue);
-}
-.homefirst_imag {
-  width: 45em;
-  height: 17em;
-  object-fit: cover;
-  object-position: center;
-  filter: opacity(70%);
-}
+} */
+
 .homefirst_content {
   display: flex;
   flex-direction: column;
   padding: 2em;
   gap: 1em;
 }
-
+.homefirst_imag {
+  width: 41em;
+  height: 25em;
+  border-radius: var(--rounded);
+}
+.homefirst_content p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
 @media (min-width: 70em) {
   .Home_First {
     width: 75em;
   }
-  .Home_First h1{
-    top: -1%;
-    left: 17%;
-    font-size: 3em;
-  }
   .homefirst_imag {
-    width: 75em;
-    height: 17em;
+    width: 30em;
+    height: 25em;
   }
   .homefirst_content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
-  .homefirst_content article {
+  /* .homefirst_content article {
     width: 36.5em;
-  }
+  } */
   .homefirst_content article p {
     padding-top: 2em;
     font-weight: bold;
   }
-  .homefirst_text{
+  .homefirst_text {
     width: 36.5em;
   }
 }
