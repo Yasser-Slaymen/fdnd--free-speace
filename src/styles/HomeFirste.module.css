@@ -80,6 +80,20 @@
   .homefirst_imag {
     width: 30em;
     height: 25em;
+    clip-path: polygon(
+      0 16%,
+      49% 16%,
+      49% 0,
+      100% 0,
+      100% 9%,
+      100% 15%,
+      100% 85%,
+      100% 100%,
+      85% 100%,
+      15% 100%,
+      0 100%,
+      0% 85%
+    );
   }
   .homefirst_content {
     display: flex;
