@@ -44,10 +44,6 @@ export default function HomeFirst() {
               {homeFirstes.map((homefirst: any) => (
                 <>
                   <div key={homefirst.id}>
-                    {/* <section className={styles.Homefirst_section1}>
-                      <h1>{homefirst.title}</h1>
-                      <p>{homefirst.multiText}</p>
-                    </section> */}
                     <section className={styles.Home_First}>
                       <h2 className={styles.HomeFirst_primaryTitle}>
                         {homefirst.titleScondary}

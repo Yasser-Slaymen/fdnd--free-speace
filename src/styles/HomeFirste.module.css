@@ -80,7 +80,8 @@
   .homefirst_imag {
     width: 30em;
     height: 25em;
-    clip-path: polygon(
+    object-fit:contain;
+    /* clip-path: polygon(
       0 16%,
       49% 16%,
       49% 0,
@@ -93,7 +94,7 @@
       15% 100%,
       0 100%,
       0% 85%
-    );
+    ); */
   }
   .homefirst_content {
     display: flex;
@@ -101,9 +102,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  /* .homefirst_content article {
-    width: 36.5em;
-  } */
   .homefirst_content article p {
     padding-top: 2em;
     font-weight: bold;
