@@ -10,6 +10,8 @@
 * Figma
 * Hygraph
 
+## 🧭Beschrijven
+Dit repostory voor opleiding fdnd  die ik gebouwd heb met behulp Nextjs en Hygraph
 
 ## 🧭Installatie & Gebruik
 * Cloning the repository
