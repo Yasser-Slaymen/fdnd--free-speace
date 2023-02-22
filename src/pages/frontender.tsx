@@ -1,5 +1,8 @@
+import FrontendSection1 from "@/components/FrontendSection1"
 export default function Frontender () {
     return(
-        <h1>Frontender</h1>
+        <>
+        <FrontendSection1/>
+        </>
     )
 }

@@ -48,9 +48,7 @@ export default function HomeSecond() {
             <>
               {homeSeconds.map((homesecond: any) => (
                 <div className={styles.Home_Second} key={homesecond.id}>
-                  <h2 className={styles.Home_Second_title}>
-                    {homesecond.title}
-                  </h2>
+                  
                   <section className={styles.Home_Second_content}>
                     <section className={styles.home_Second_Section1}>
                       <img
