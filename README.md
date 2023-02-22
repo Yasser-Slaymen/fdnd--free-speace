@@ -14,7 +14,7 @@
 ## 🧭Installatie & Gebruik
 * Cloning the repository
 ```javascript 
-git clone git@github.com:https:gh repo clone Yasser-Slaymen/lets-jam-webapplicatie
+git clone git@github.com:https:gh repo clone Yasser-Slaymen/fdnd--free-speace
 Moving to the folder
 Install NPM packages
  npm install
