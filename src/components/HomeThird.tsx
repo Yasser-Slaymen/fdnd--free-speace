@@ -115,7 +115,7 @@ export default function HomeThird() {
                       <div className={styles.Home_Third_LinkContainar}>
                         <Link
                           className={styles.Home_Third_link1}
-                          href="/frontender"
+                          href="/inhoudVanOpleiding"
                         >
                           <span>Read more</span>
                           <Image
@@ -150,7 +150,7 @@ export default function HomeThird() {
                       <div className={styles.Home_Third_LinkContainar}>
                         <Link
                           className={styles.Home_Third_link1}
-                          href="/frontender"
+                          href="/bouwtNetwerkOp"
                         >
                           <span>Read more</span>
                           <Image

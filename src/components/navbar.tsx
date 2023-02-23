@@ -21,11 +21,18 @@ export default function Navbar() {
           <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
-          <Linknav link="/frontender" content="Inhoud van de opleiding" />
+          <Linknav
+            link="/inhoudVanOpleiding"
+            content="Inhoud van de opleiding"
+          />
           <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
+        {/* <li>
+          <Linknav link="/bouwtNetwerkOp" content="Mogelijke beroepen" />
+          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
+        </li> */}
         <li>
-          <Linknav link="/frontender" content="Mogelijke beroepen" />
+          <Linknav link="/frontender" content="Je bouwt netwerk op" />
           <Image src="/images/nav1.png" width={20} height={15} alt="img" />
         </li>
         <li>
