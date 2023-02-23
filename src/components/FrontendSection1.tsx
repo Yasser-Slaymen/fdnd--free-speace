@@ -85,7 +85,6 @@ export default function FrontendSection1() {
                       alt="frontend img"
                     />
                   </section>
-                
                 </main>
               ))}
             </>

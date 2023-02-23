@@ -1,13 +1,13 @@
-import Link from 'next/link'
+import Link from "next/link";
 interface LinknavProps {
-    link:string;
-    content:string;
+  link: string;
+  content: string;
 }
 
-export default function Linknav ({link, content}: LinknavProps){
-    return(
-        <>
-        <Link href={link}>{content}</Link>
-        </>
-    )
+export default function Linknav({ link, content}: LinknavProps) {
+  return (
+    <>
+      <Link href={link}>{content}</Link>
+    </>
+  );
 }

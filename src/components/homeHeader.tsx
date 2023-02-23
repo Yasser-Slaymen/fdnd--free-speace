@@ -31,13 +31,13 @@ export default function HomeHeader() {
     fetchProducts();
   }, []);
   return (
-    <div>
+    <>
       <HomeInterface>
         <>
           {!homeHeaders ? (
             "Oopss somthing going wrong"
           ) : (
-            <>
+            <div>
               {homeHeaders.map((homeHeader: any) => (
                 <>
                   <div className={styles.homeHeader} key={homeHeader.id}>
@@ -60,10 +60,10 @@ export default function HomeHeader() {
                   </div>
                 </>
               ))}
-            </>
+            </div>
           )}
         </>
       </HomeInterface>
-    </div>
+    </>
   );
 }

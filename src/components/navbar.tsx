@@ -2,8 +2,21 @@ import styles from "@/styles/Navbar.module.css";
 import HamburgerMenu from "./hmburgermenu";
 import Linknav from "@/interfaces/Link";
 import Image from "next/image";
+// import { useState } from "react";
 
 export default function Navbar() {
+  // set the initial text color to black
+  // const [textColor, setTextColor] = useState("yellow");
+
+  // click function to change the text color to red
+  // const handleClick = () => {
+  //   setTextColor("red");
+  //   console.log("clicked");
+  // };
+  //  onClick={handleClick}
+  //  style={{ color: textColor }}
+  // click
+
   return (
     <nav className={styles.nav_pc}>
       <section className="log_hmburg">

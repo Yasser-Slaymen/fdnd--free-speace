@@ -34,7 +34,7 @@ export default function HomeFirst() {
     fetchProducts();
   }, []);
   return (
-    <div>
+    <>
       <HomeInterface>
         <>
           {!homeFirstes ? (
@@ -69,6 +69,6 @@ export default function HomeFirst() {
           )}
         </>
       </HomeInterface>
-    </div>
+    </>
   );
 }
