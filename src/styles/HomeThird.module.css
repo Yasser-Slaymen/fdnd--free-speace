@@ -60,7 +60,7 @@
 }
 .Home_Third_img1 {
   width: 13em;
-  height: 11em;
+  height: 15em;
   border-radius: var(--rounded);
 }
 .home_Third_conten1 {
@@ -77,8 +77,9 @@
   width: 8em;
   padding: 0.5em;
   background-color: var(--blue);
-  color: var(--lavender-dark);
+  color: var(--green);
   border-radius: var(--rounded);
+  font-weight: 100;
 }
 .readMore1_icon{
   margin-left: .5em;
@@ -96,7 +97,7 @@
   }
   .Home_Third_img1 {
     width: 15em;
-    /* height: 1em; */
+    height: 11em;
   }
   .home_Third_conten1 {
     display: flex;

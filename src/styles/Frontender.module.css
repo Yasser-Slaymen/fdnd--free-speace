@@ -55,6 +55,8 @@
   }
   .frontender_text1 {
     line-height: 1.5em;
+    font-weight: 550;
+
   }
   .frontend_img1 {
     width: 37em;
@@ -66,7 +68,6 @@
     justify-content: space-around;
     gap: 1em;
     padding: 2em;
-    margin-top: 3em;
     background-color: var(--white);
     border-radius: var(--rounded);
   }
@@ -76,9 +77,9 @@
     color: var(--blue);
   }
   .frontender_text2 {
-    line-height: 1.9em;
+    line-height: 1.5em;
     color: var(--blue);
-    font-weight: 600;
+    font-weight: 550;
   }
   .frontend_img2 {
     width: 30em;

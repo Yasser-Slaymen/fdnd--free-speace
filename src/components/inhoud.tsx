@@ -4,14 +4,14 @@ import { request } from "graphql-request";
 import styles from "@/styles/Frontender.module.css";
 
 export default function InhoudVanOpleiding () {
-  const [fronternders, setProducts] = useState<any[]>([]);
+  const [inhoudToelatings, setProducts] = useState<any[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
-      const { fronternders } = await request(
+      const { inhoudToelatings } = await request(
         "https://api-us-west-2.hygraph.com/v2/cle2ubeov4t0401uf31q9ab5c/master",
         `
               {
-                fronternders  {
+                inhoudToelatings  {
                     id
                     title1
                     richText1 {
@@ -34,7 +34,7 @@ export default function InhoudVanOpleiding () {
             `
       );
 
-      setProducts(fronternders);
+      setProducts(inhoudToelatings);
     };
 
     fetchProducts();
@@ -43,45 +43,47 @@ export default function InhoudVanOpleiding () {
     <>
       <FrontendProps1>
         <>
-          {!fronternders ? (
+          {!inhoudToelatings ? (
             "Oopss somthing going wrong"
           ) : (
             <>
-              {fronternders.map((frontender: any) => (
-                <main className={styles.FrontendSection1} key={frontender.id}>
+              {inhoudToelatings.map((inhoud: any) => (
+                <main className={styles.FrontendSection1} key={inhoud.id}>
+                  {/* section1 */}
                   <section className={styles.Frontender_firstSection}>
                     <section>
                       <h1 className={styles.frontender_title1}>
-                        {frontender.title1}
+                        {inhoud.title1}
                       </h1>
                       <p
                         className={styles.frontender_text1}
                         dangerouslySetInnerHTML={{
-                          __html: frontender.richText1.html,
+                          __html: inhoud.richText1.html,
                         }}
                       ></p>
                     </section>
                     <img
                       className={styles.frontend_img1}
-                      src={frontender.img1.url}
+                      src={inhoud.img1.url}
                       alt="frontend img"
                     />
                   </section>
+                  {/* section2 */}
                   <section className={styles.Frontender_SecondSection}>
                     <section>
                       <h1 className={styles.frontender_title2}>
-                        {frontender.title2}
+                        {inhoud.title2}
                       </h1>
                       <p
                         className={styles.frontender_text2}
                         dangerouslySetInnerHTML={{
-                          __html: frontender.richText2.html,
+                          __html: inhoud.richText2.html,
                         }}
                       ></p>
                     </section>
                     <img
                       className={styles.frontend_img2}
-                      src={frontender.img2.url}
+                      src={inhoud.img2.url}
                       alt="frontend img"
                     />
                   </section>
