@@ -85,13 +85,7 @@ export default function FrontendSection1() {
                       alt="frontend img"
                     />
                   </section>
-                  {/* <section>
-                    <section>
-                        <h2></h2>
-                        <p></p>
-                    </section>
-                    <img src="" alt="" />
-                  </section> */}
+                
                 </main>
               ))}
             </>

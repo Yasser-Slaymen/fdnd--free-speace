@@ -26,7 +26,8 @@ body {
   margin-top: 4em;
   font-family: "Open Sans", sans-serif;
   background-color: var( --blue);
-  width: 47em;
+  /* width: 47em; */
+  width: 100%;
   overflow-x:hidden;
 }
 p{
@@ -44,12 +45,13 @@ footer{
 @media (min-width: 70em) {
   body {
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 4em;
     font-family: "Open Sans", sans-serif;
     background-color: var( --blue);
-    width: 96em;
+    width: 100%;
     overflow-x:hidden;
   }
  
