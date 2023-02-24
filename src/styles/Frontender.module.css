@@ -3,8 +3,8 @@
   /* padding: 2em; */
 }
 /* first section */
-.Frontender_firstSection{
-  padding:2em 0 2em 0 ;
+.Frontender_firstSection {
+  padding: 2em 0 2em 0;
 }
 .frontender_title1 {
   color: var(--white);
@@ -22,8 +22,8 @@
   margin: 1em 0 1em 0;
 }
 /* second section */
-.Frontender_SecondSection{
-  padding:2em 0 2em 0 ;
+.Frontender_SecondSection {
+  padding: 2em 0 2em 0;
 }
 .frontender_title2 {
   color: var(--white);
@@ -55,8 +55,7 @@
   }
   .frontender_text1 {
     line-height: 1.5em;
-    font-weight: 550;
-
+    /* font-weight: 550; */
   }
   .frontend_img1 {
     width: 37em;
@@ -79,7 +78,7 @@
   .frontender_text2 {
     line-height: 1.5em;
     color: var(--blue);
-    font-weight: 550;
+    /* font-weight: 550; */
   }
   .frontend_img2 {
     width: 30em;

@@ -10,4 +10,15 @@
     font-size: larger;
     font-weight: bold;
   }
+
+  .nav-link {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  .active-link {
+    color: #f20808;
+  }
+  .active-link:active {
+    color: #f93402;
+  }
 }

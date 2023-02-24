@@ -40,23 +40,6 @@
   height: calc(2 * var(--rounded));
   border-top-left-radius: var(--rounded);
 }
-/* finsh-title */
-/* .Homefirst_section1 {
-  position: relative;
-} */
-/* .Home_First h1 {
-  position: absolute;
-  top: 3%;
-  left: 16%;
-  font-size: 2em;
-  font-weight: bolder;
-  z-index: 9999;
-  color: var(--blue);
-  text-shadow: 0 1px 0 #010f05, 0 2px 0 #0c0c0c, 0 3px 0 var(--blue),
-    0 4px 0 #e6e2e2, 0 5px 0 var(--blue), 0 6px 0 #ede2e2, 0 7px 0 var(--blue),
-    0 8px 0 #c6b0b0, 0 9px 0 var(--blue), 0 10px 0 rgb(237, 228, 228),
-    0 11px 0 var(--blue), 0 12px 0 #f3eded, 0 20px 30px var(--blue);
-} */
 
 .homefirst_content {
   display: flex;
@@ -80,21 +63,7 @@
   .homefirst_imag {
     width: 30em;
     height: 25em;
-    object-fit:contain;
-    /* clip-path: polygon(
-      0 16%,
-      49% 16%,
-      49% 0,
-      100% 0,
-      100% 9%,
-      100% 15%,
-      100% 85%,
-      100% 100%,
-      85% 100%,
-      15% 100%,
-      0 100%,
-      0% 85%
-    ); */
+    object-fit: contain;
   }
   .homefirst_content {
     display: flex;

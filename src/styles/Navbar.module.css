@@ -13,9 +13,9 @@
   font-weight: bolder;
   color: var(--blue);
 }
-.nav_pc ul a {
+/* .nav_pc ul a {
   color: #ffff;
-}
+} */
 @media (min-width: 70em) {
   .nav_pc {
     display: flex;
@@ -28,13 +28,6 @@
   .nav_pc > section {
     padding: 0em;
   }
-  .nav_pc ul a {
-    color: var(--blue);
-  }
-  .nav_pc ul a:hover {
-    color: blue;
-  }
-  .nav_pc ul a:focus {
-    color: red;
-  }
+
+
 }

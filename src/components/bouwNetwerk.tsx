@@ -27,6 +27,13 @@ export default function BouwtNetwerkOp () {
                     img2 {
                       url
                     }
+                    titleNetwerk
+                    richTextNetwerk {
+                      html
+                    }
+                    imgNetwerk {
+                      url
+                    }
                      
                     
                   }
@@ -52,18 +59,18 @@ export default function BouwtNetwerkOp () {
                   <section className={styles.Frontender_firstSection}>
                     <section>
                       <h1 className={styles.frontender_title1}>
-                        {frontender.title1}
+                        {frontender.titleNetwerk}
                       </h1>
                       <p
                         className={styles.frontender_text1}
                         dangerouslySetInnerHTML={{
-                          __html: frontender.richText1.html,
+                          __html: frontender.richTextNetwerk.html,
                         }}
                       ></p>
                     </section>
                     <img
                       className={styles.frontend_img1}
-                      src={frontender.img1.url}
+                      src={frontender.imgNetwerk.url}
                       alt="frontend img"
                     />
                   </section>
