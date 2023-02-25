@@ -12,17 +12,17 @@
   width: 15em;
   padding: 1.5em;
   background-color: var(--blue);
-  color: var(--green);  
+  color: var(--green);
   border-radius: var(--radius);
-  cursor: pointer;    
+  cursor: pointer;
 }
 .a_MobilLink a {
-    color: aliceblue;
-  }
-.ul_Mobil li {      
+  color: aliceblue;
+}
+.ul_Mobil li {
   margin: 0.5em;
 }
-.ul_Mobil a{
+.ul_Mobil a {
   color: aliceblue;
 }
 .ul_Mobil a:hover {
