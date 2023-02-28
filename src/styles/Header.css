@@ -16,9 +16,9 @@
     text-decoration: none;
   }
   .active-link {
-    color: #f20808;
+    color: var( --purple);
   }
   .active-link:active {
-    color: #f93402;
+    color: var(--purple);
   }
 }

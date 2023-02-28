@@ -66,12 +66,12 @@ export default function Microsites() {
                     <section className={styles.micro_2}>
                       <h3>{footer.queklinks}</h3>
                       <section>
-                        <div
+                        <div className={styles.Microsites_links1}
                           dangerouslySetInnerHTML={{
                             __html: footer.micrositeRichtext.html,
                           }}
                         ></div>
-                        <div
+                        <div className={styles.Microsites_links1}
                           dangerouslySetInnerHTML={{
                             __html: footer.micrositeRichtext2.html,
                           }}
