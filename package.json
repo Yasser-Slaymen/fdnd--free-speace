@@ -17,6 +17,7 @@
     "graphql-request": "^5.1.0",
     "marked": "^4.2.12",
     "next": "13.1.6",
+    "next-progressbar": "^1.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
