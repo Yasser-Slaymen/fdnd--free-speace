@@ -20,39 +20,81 @@ export default function Navbar() {
             content="Home"
             className={router.pathname === "/" ? "active-link" : "nav-link"}
           />
-          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
+          <Image
+            className={styles.list_img}
+            src="/images/nav1.png"
+            width={20}
+            height={15}
+            alt="img"
+          />
         </li>
         <li>
           <Linknav
             link="/frontender"
             content="Frontender worden"
-            className={router.pathname === "/frontender" ? "active-link" : "nav-link"}
+            className={
+              router.pathname === "/frontender" ? "active-link" : "nav-link"
+            }
           />
-          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
+          <Image
+            className={styles.list_img}
+            src="/images/nav1.png"
+            width={20}
+            height={15}
+            alt="img"
+          />
         </li>
         <li>
           <Linknav
             link="/inhoudVanOpleiding"
             content="Inhoud van de opleiding"
-            className={router.pathname === "/inhoudVanOpleiding" ? "active-link" : "nav-link"}
+            className={
+              router.pathname === "/inhoudVanOpleiding"
+                ? "active-link"
+                : "nav-link"
+            }
           />
-          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
+          <Image
+            className={styles.list_img}
+            src="/images/nav1.png"
+            width={20}
+            height={15}
+            alt="img"
+          />
         </li>
         <li>
           <Linknav
             link="/bouwtNetwerkOp"
             content="Je bouwt netwerk op"
-            className={router.pathname === "/bouwtNetwerkOp" ? "active-link" : "nav-link"}
+            className={
+              router.pathname === "/bouwtNetwerkOp" ? "active-link" : "nav-link"
+            }
           />
-          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
+          <Image
+            className={styles.list_img}
+            src="/images/nav1.png"
+            width={20}
+            height={15}
+            alt="img"
+          />
         </li>
         <li>
           <Linknav
             link="/inhoudVanOpleiding"
             content="Toelatingseisen"
-            className={router.pathname === "/inhoudVanOpleiding" ? "active-link" : "nav-link"}
+            className={
+              router.pathname === "/inhoudVanOpleiding"
+                ? "active-link"
+                : "nav-link"
+            }
           />
-          <Image src="/images/nav1.png" width={20} height={15} alt="img" />
+          <Image
+            className={styles.list_img}
+            src="/images/nav1.png"
+            width={20}
+            height={15}
+            alt="img"
+          />
         </li>
       </ul>
     </nav>
