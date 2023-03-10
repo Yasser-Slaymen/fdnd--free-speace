@@ -25,7 +25,7 @@ export default function Navbar() {
         <li>
           <Linknav
             link="/frontender"
-            content="Frontend worden"
+            content="Frontender worden"
             className={router.pathname === "/frontender" ? "active-link" : "nav-link"}
           />
           <Image src="/images/nav1.png" width={20} height={15} alt="img" />
