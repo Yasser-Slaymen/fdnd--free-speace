@@ -1,26 +1,32 @@
 import { useEffect, useState } from "react";
 import { request } from "graphql-request";
-import HomeInterface from "@/interfaces/HomInterface";
 import styles from "@/styles/HomeHeader.module.css";
+interface PropsType{
+  id: number;
+  title: string;
+  richText: { html: string};
+  img: { url: string};
 
-export default function HomeHeader() {
-  const [homeHeaders, setProducts] = useState<any[]>([]);
+}
+export default function HomeFirst() {
+  const [homeHeaders, setProducts] = useState<PropsType[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
-      const { homeHeaders } = await request(
+      const { homeHeaders }:{homeHeaders: PropsType[] } = await request(
         "https://api-us-west-2.hygraph.com/v2/cle2ubeov4t0401uf31q9ab5c/master",
         `
           {
             homeHeaders{
-                    id
-                    title
-                    richText {
-                    html
-                    }
-                    img {
-                        url
-                     }     
-                }
+              id
+              title
+              richText {
+                html
+              }
+              img {
+                url
+              }    
+                    
+            }
           }
         `
       );
@@ -32,13 +38,13 @@ export default function HomeHeader() {
   }, []);
   return (
     <>
-      <HomeInterface>
+      
         <>
           {!homeHeaders ? (
             "Oopss somthing going wrong"
           ) : (
-            <div>
-              {homeHeaders.map((homeHeader: any) => (
+            <>
+              {homeHeaders.map((homeHeader) => (
                 <>
                   <div className={styles.homeHeader} key={homeHeader.id}>
                     <h1 className={styles.homeHeader_title}>
@@ -60,10 +66,10 @@ export default function HomeHeader() {
                   </div>
                 </>
               ))}
-            </div>
+            </>
           )}
         </>
-      </HomeInterface>
+    
     </>
   );
 }
