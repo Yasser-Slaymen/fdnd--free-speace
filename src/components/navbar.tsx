@@ -22,9 +22,9 @@ export default function Navbar() {
           />
           <Image
             className={styles.list_img}
-            src="/images/nav1.png"
-            width={20}
-            height={15}
+            src="/images/Vector.png"
+            width={8}
+            height={7}
             alt="img"
           />
         </li>
@@ -38,9 +38,9 @@ export default function Navbar() {
           />
           <Image
             className={styles.list_img}
-            src="/images/nav1.png"
-            width={20}
-            height={15}
+            src="/images/Vector.png"
+            width={7}
+            height={7}
             alt="img"
           />
         </li>
@@ -56,9 +56,9 @@ export default function Navbar() {
           />
           <Image
             className={styles.list_img}
-            src="/images/nav1.png"
-            width={20}
-            height={15}
+            src="/images/Vector.png"
+            width={7}
+            height={7}
             alt="img"
           />
         </li>
@@ -72,9 +72,9 @@ export default function Navbar() {
           />
           <Image
             className={styles.list_img}
-            src="/images/nav1.png"
-            width={20}
-            height={15}
+            src="/images/Vector.png"
+            width={7}
+            height={7}
             alt="img"
           />
         </li>
@@ -90,9 +90,9 @@ export default function Navbar() {
           />
           <Image
             className={styles.list_img}
-            src="/images/nav1.png"
-            width={20}
-            height={15}
+            src="/images/Vector.png"
+            width={7}
+            height={7}
             alt="img"
           />
         </li>
