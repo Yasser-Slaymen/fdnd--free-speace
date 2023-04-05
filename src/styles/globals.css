@@ -26,7 +26,6 @@ body {
   margin-top: 4em;
   font-family: "Open Sans", sans-serif;
   background-color: var(--blue);
-  /* width: 47em; */
   width: 100%;
   overflow-x: hidden;
 }
