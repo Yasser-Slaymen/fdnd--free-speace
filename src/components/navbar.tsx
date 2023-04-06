@@ -1,7 +1,6 @@
 import styles from "@/styles/Navbar.module.css";
 import HamburgerMenu from "./hmburgermenu";
 import Linknav from "@/interfaces/Link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
@@ -20,13 +19,7 @@ export default function Navbar() {
             content="Home"
             className={router.pathname === "/" ? "active-link" : "nav-link"}
           />
-          <Image
-            className={styles.list_img}
-            src="/images/Vector.png"
-            width={8}
-            height={7}
-            alt="img"
-          />
+         
         </li>
         <li>
           <Linknav
@@ -36,13 +29,7 @@ export default function Navbar() {
               router.pathname === "/frontender" ? "active-link" : "nav-link"
             }
           />
-          <Image
-            className={styles.list_img}
-            src="/images/Vector.png"
-            width={7}
-            height={7}
-            alt="img"
-          />
+         
         </li>
         <li>
           <Linknav
@@ -54,13 +41,7 @@ export default function Navbar() {
                 : "nav-link"
             }
           />
-          <Image
-            className={styles.list_img}
-            src="/images/Vector.png"
-            width={7}
-            height={7}
-            alt="img"
-          />
+          
         </li>
         <li>
           <Linknav
@@ -70,13 +51,7 @@ export default function Navbar() {
               router.pathname === "/bouwtNetwerkOp" ? "active-link" : "nav-link"
             }
           />
-          <Image
-            className={styles.list_img}
-            src="/images/Vector.png"
-            width={7}
-            height={7}
-            alt="img"
-          />
+          
         </li>
         <li>
           <Linknav
@@ -88,13 +63,7 @@ export default function Navbar() {
                 : "nav-link"
             }
           />
-          <Image
-            className={styles.list_img}
-            src="/images/Vector.png"
-            width={7}
-            height={7}
-            alt="img"
-          />
+          
         </li>
       </ul>
     </nav>
