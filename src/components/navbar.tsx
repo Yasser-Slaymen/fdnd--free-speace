@@ -19,7 +19,6 @@ export default function Navbar() {
             content="Home"
             className={router.pathname === "/" ? "active-link" : "nav-link"}
           />
-         
         </li>
         <li>
           <Linknav
@@ -29,7 +28,6 @@ export default function Navbar() {
               router.pathname === "/frontender" ? "active-link" : "nav-link"
             }
           />
-         
         </li>
         <li>
           <Linknav
@@ -41,7 +39,6 @@ export default function Navbar() {
                 : "nav-link"
             }
           />
-          
         </li>
         <li>
           <Linknav
@@ -51,7 +48,6 @@ export default function Navbar() {
               router.pathname === "/bouwtNetwerkOp" ? "active-link" : "nav-link"
             }
           />
-          
         </li>
         <li>
           <Linknav
@@ -63,7 +59,6 @@ export default function Navbar() {
                 : "nav-link"
             }
           />
-          
         </li>
       </ul>
     </nav>
